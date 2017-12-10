@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Equipo ky</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../icomoon/fonts/style.css">
+	<link rel="stylesheet" href="../fontello/fontello.css">
+	<link rel="stylesheet" href="../animaciones/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="icon" type="pgn/jpg" href="../imagenes/icono_pestana_equipo_ky.png">
+	<script src="../animaciones/wow.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body class="wow fadeIn">	
+	<div id="contenedor-menu">		
+		<div id="contenedor-marca">
+			<h1 id="marca"><a href="../index.html">Equipo ky.</a></h1>
+		</div>
+			<div id="contenedor-items">
+				<ul id="items-menu">
+					<li><a href="#"><u>Sobre nosotros</u></a></li>
+					<li><a href="proyectos.html">Proyectos</a></li>
+					<li><a href="novedades.html">Novedades</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+				
+			</div>
+	</div>
+	<div id="contenedor-menu-movil">
+		<div id="contenedor-marca">
+			<h1 id="marca">Equipo ky.</h1>
+		</div>	
+			<input type="checkbox" id="abrir-menu">
+				<div id="contenedor-icon">
+					<label for="abrir-menu"><span class="icon-menu-fontello"></span></label>
+				</div>
+		<div id="contenedor-items-movil">
+			<ul id="items-menu-movil">
+				<li><a href="#">Sobre nosotros</a></li>
+				<li><a href="proyectos.html">Proyectos</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>	
+		</div>	
+	</div>
+			
+<header class="header">
+	<img class="header__img" src="http://www.culturizate.com/wp-content/uploads/2016/08/goldengatedesdearriba.jpg"/>
+        <h1 class="header__title">
+        Material Design UI
+    	</h1>
+    <p class="header__desciption">responsive web app</p>
+</header>
+
+<main class="main">
+  <div class="main__container">
+    <section class="features">
+        <h1 class="features__title">
+        ¿Qué es equipo ky?
+    	</h1>
+    	<p>Equipo ky es la unión de dos diseñadores de sitios web Kevin y Yorbi, donde uniendo las iniciales de cada nombre resulta "ky", ¡lo que hoy día llamamos Equipo ky!
+    	</p>
+    	<div class="pkevin">
+    		<div class="pf">
+    			<h2>Kevin Paternina</h2>
+    			<p>Soy estudiante de Sistemas informáticos, 17 años, conocimientos en Marketing Digital, amo todo lo relacionado al Diseño Web, y con objetivos próximos a estudiar Diseño Gráfico.
+    			</p>
+    		</div>
+    		<div class="pkevini">
+    			<img src="../imagenes/kevin.png" alt="Diseño web, diseño móvil, programación." title="Estudiantes de sistemas informáticos, énfasis en diseño web y diseño móvil." id="img-about" width="250px" height="245px">
+    		</div>
+    	</div>
+    	<div class="va">
+    		Developer's
+    	</div>
+    	<div class="pkevin">
+    		<div class="pkevini">
+    			<img src="../imagenes/yorbi2.jpg" alt="Diseño web, diseño móvil, programación." title="Estudiantes de sistemas informáticos, énfasis en diseño web y diseño móvil." id="img-yorbi" width="250px" height="245px">
+    		</div>
+    		<div class="pf">
+    			<h2>Yorbi Cardozo</h2>
+    			<p>Soy estudiante de Sistemas Informáticos, con énfasis en el mundo del Front-End y diseñador web de aplicaciones para dispositivos móviles, con ganas de aprender cada día más y actualizándome constantemente.
+    			</p>
+    		</div>
+    		
+    	</div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+	<p>Copyright &copy; 2017  Equipo Ky</p>
+</footer>
+    <script>
+    var wow = new WOW(
+        {
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            
+        }
+    );
+    new WOW().init();
+    </script>
+   	<script type="text/javascript">
+		var ancho = (window.innerWidth);
+		var alto = (window.innerHeight);
+
+		if (ancho<800){
+		var b;
+		function eliminar() {
+			b = document.getElementById("vacio");
+			var hijo = document.getElementById("menu");
+			b.removeChild(hijo);
+			}
+		}
+	</script>
+   	<script>
+   		$(document).ready(function mostrar_modal(){
+   			$("#modal").slideDown(1000);
+			$(".contenedor_modal").click(function(){
+				$(".contenedor_modal").slideUp("fast");
+			});
+			//Cerrar modal con tecla Esc
+			$(document).keydown(function(e){
+				if (e.which==27){
+					$("#modal").slideUp("slow");
+					$(".contenedor_modal").slideUp("fast");
+				}
+			});
+		});
+   		
+   		function cerrar_modal(){
+		$("#modal").slideUp("slow");
+		$(".contenedor_modal").slideUp("fast");
+		
+		}
+		
+	</script>
+	<!--Fin scripting del modal-->
+   <!--Scripting para enlace interno-->
+   <script>
+	$(function() {
+	  $('#readmore').click(function() {
+		  
+	        $('html,body').animate({
+	          scrollTop:$('#reading-more').offset().top 
+	        }, 2000);
+	 	 });
+	});
+	</script>
+   <!--Fin scripting enlace interno-->
+   <!--Añadiendo clase distinta al menú cuando se haga scroll-->
+   <script>
+   $(document).ready(function(){
+
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 710 ){
+			$("#menu").addClass('menu2');
+		} else {
+			$("#menu").removeClass("menu2");
+		}
+	});
+
+});
+</script>
+   <!--Fin añadiendo clase-->
+</body>
+</html>

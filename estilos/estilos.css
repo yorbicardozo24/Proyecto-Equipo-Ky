@@ -1,0 +1,218 @@
+@import url(menu_banner.css);
+.about-team {
+  margin-top: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.about-team p {
+  font-weight: 700;
+  line-height: 1.2;
+  color: #555;
+  text-align: center;
+  font-size: 1.875rem;
+}
+
+#definicion-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+#definicion-team #ilustracion-team, #definicion-team #ilustracion-team2 {
+  background-image: url(../imagenes/index/working_ky.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+#definicion-team #texto-definicion {
+  font-size: 1.25rem;
+  text-align: justify;
+  width: 300px;
+  padding: 10px;
+}
+
+#definicion-team #ilustracion-team2 {
+  background-image: url(../imagenes/index/flag.png);
+}
+
+/*Sistema de trabajo en equipoky*/
+#contenedor-sistema-trabajo #sistema-trabajo #get-idea, #contenedor-sistema-trabajo #sistema-trabajo #analyze-idea, #contenedor-sistema-trabajo #sistema-trabajo #running-idea, #contenedor-sistema-trabajo #sistema-trabajo #running-ideaa {
+  border-radius: 4px;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #dfe0e0;
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #get-idea #imagen-get, #contenedor-sistema-trabajo #sistema-trabajo #analyze-idea #imagen-analyze, #contenedor-sistema-trabajo #sistema-trabajo #running-idea #imagen-working, #contenedor-sistema-trabajo #sistema-trabajo #running-ideaa #imagen-running {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #get-idea #imagen-get2, #contenedor-sistema-trabajo #sistema-trabajo #analyze-idea #imagen-analyze2, #contenedor-sistema-trabajo #sistema-trabajo #running-idea #imagen-working2, #contenedor-sistema-trabajo #sistema-trabajo #running-ideaa #imagen-running2 {
+  background: #DFE0E0;
+  width: 100%;
+  height: 70%;
+  background-size: 150px 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.texto-sistema, #contenedor-sistema-trabajo #sistema-trabajo #get-idea .texto-sistema, #contenedor-sistema-trabajo #sistema-trabajo #analyze-idea .texto-sistema, #contenedor-sistema-trabajo #sistema-trabajo #running-idea .texto-sistema, #contenedor-sistema-trabajo #sistema-trabajo #running-ideaa .texto-sistema {
+  border-top: 1px solid #dfe0e0;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.texto-sistema p, #contenedor-sistema-trabajo #sistema-trabajo #get-idea .texto-sistema p, #contenedor-sistema-trabajo #sistema-trabajo #analyze-idea .texto-sistema p, #contenedor-sistema-trabajo #sistema-trabajo #running-idea .texto-sistema p, #contenedor-sistema-trabajo #sistema-trabajo #running-ideaa .texto-sistema p {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#contenedor-sistema-trabajo {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo {
+  width: 74%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #get-idea #imagen-get {
+  background-image: url(../imagenes/index/idea.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #get-idea #imagen-get2 {
+  background-image: url(../imagenes/index/ky1.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #analyze-idea #imagen-analyze {
+  background-image: url(../imagenes/index/analyze.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #analyze-idea #imagen-analyze2 {
+  background-image: url(../imagenes/index/ky2.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #running-idea #imagen-working {
+  background-image: url(../imagenes/index/working.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #running-idea #imagen-working2 {
+  background-image: url(../imagenes/index/ky3.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #running-ideaa #imagen-running {
+  background-image: url(../imagenes/index/time.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #running-ideaa #imagen-running2 {
+  background-image: url(../imagenes/index/ky4.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #circle-1, #contenedor-sistema-trabajo #sistema-trabajo #circle-2, #contenedor-sistema-trabajo #sistema-trabajo #circle-3, #contenedor-sistema-trabajo #sistema-trabajo #circle-4 {
+  background: #DFE0E0;
+  width: 100%;
+  height: 100%;
+  background-size: 150px 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #circle-1 {
+  background-image: url(../../imagenes/index/ky_responsive.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #circle-2 {
+  background-image: url(../../imagenes/index/ky_design_apps.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #circle-3 {
+  background-image: url(../../imagenes/index/ky_developers.png);
+}
+
+#contenedor-sistema-trabajo #sistema-trabajo #circle-4 {
+  background-image: url(../../imagenes/index/ky_marketing2.png);
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  src: url(../fuente/TitilliumWeb-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fuente/OpenSans-Bold.ttf) format("truetype");
+  src: url(../fuente/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fuente/Proxima Nova Bold.otf") format("truetype");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #555555;
+}
+
+body {
+  background: red;
+}

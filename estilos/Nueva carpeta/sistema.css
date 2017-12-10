@@ -1,0 +1,53 @@
+.contenedor-flex-sistema{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin-bottom: 15px;
+
+}
+#sistema-idea img{
+	width: 300px;
+	max-width: 250px;
+	margin-top: 51px;
+}
+#sistema-proceso img{
+	width: 300px;
+	max-width: 250px;
+	margin-top: 51px;
+}
+#sistema-final img{
+
+	width: 250px;
+	margin-top: 51px;	
+}
+ #sistema-idea h3, #sistema-proceso h3, #sistema-final h3{
+	text-align: center;
+	font-weight: normal;
+}
+/*Media querie para reducir tamaño de las 3 imagenes (idea, proceso, apretóndemanos)*/
+
+@media (max-width: 650px){
+#sistema-idea img,#sistema-proceso img{
+	max-width: 210px;
+}
+#sistema-final img{
+	max-width: 230px;
+}
+
+@media (max-width: 368px){
+	#sistema-idea img,#sistema-proceso img{
+	max-width: 190px;
+}
+#sistema-final img{
+	max-width: 200px;
+	margin-left: 30px;
+}
+}
+
+@media (max-width: 290px){
+#sistema-final img{
+	max-width: 200px;
+	margin-left:20px;
+}
+}

@@ -1,0 +1,15 @@
+//Utilizando GIT
+//Para comenzar a utilizar git es necesario iniciarlo con el comando "git init"
+//"git status" nos indica el estado de nuestro proyecto
+//"git add -A" agrega todo nuestro proyecto a git
+//"git commit -m "Mensaje o breve descripcion del commit" este comando es para agregar un commit"
+//"git checkout y el numero largo" es para movernos entre commit
+//"git checkout" nos permite movernos entre ramas y commit
+//"git reset --hard y los numeros" nos permite borrar todo un commit
+//"git log" nos muestra una lista de todos nuestros commit
+//"git branch" muestra las ramas que tiene el proyecto y si le añadimos un nombre creamos una nueva rama
+//"git branch -d y el nombre de la rama" sirve para borrar las ramas
+//"git merge y el nombre de la rama" sirve para fusionar
+//"git remote add origin y el link del repositorio de github" sirve para hacer la conexion de git con github
+//"git remote remove origin" sirve para remover esa conexion
+//"git push origin master" sube el proyecto inicial y mejoras

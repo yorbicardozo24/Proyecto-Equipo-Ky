@@ -1,0 +1,146 @@
+.servicios-ofrecidos{ /*Es lo que capta al usuario en la franja amarilla*/
+
+	margin-top: 15%;
+	width: 100%;
+	height: 300px;
+	background-color: #fdd835;
+}
+.servicios-ofrecidos h4{
+	padding-top: 75px;
+	text-align: center;
+	color: #333;
+	font-weight: normal;
+	font-size: 35px;
+}
+.servicios-ofrecidos p{
+	
+	text-align: center;
+}
+
+/*Aquí empieza el contenido 
+de los servicios que vamos 
+a ofrecer, lo que aparece arriba 
+es el mensaje que capta al cliente sobre los servicios*/
+
+.servicios{
+	display: flex;
+	width:100%;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	margin-top: 15%;
+}
+.servicios span {
+	font-size: 115px;
+	margin:45px;
+}
+.servicios p{
+	margin-top: 25px;
+	text-align: center;
+}
+/*Franjas diagonales*/
+
+#div-diagonal-1{
+	width: 100%;
+	height: 300px;
+	background-color: #ec4b2d;
+	background-image: url(../imagenes/diamond.png);
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	margin-top: 15%;
+	margin-bottom: 40%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*transform-origin: top left;*/ /*No es necesario*/
+	transform: skewY(6deg);
+	
+}
+#div-diagonal-1 h4{
+	transform: skewY(-5deg);
+	background-color: rgba(255,255,255, 0.3);
+	padding:15px;
+	border-radius: 5px;
+	color:#f1f1f1;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+#div-diagonal-2{
+	width: 100%;
+	height: 300px;
+	background-color: #ec4b2d;
+	background-image: url(../imagenes/optimizacion.png);
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*transform-origin: top left;*/ /*No es necesario*/
+	transform: skewY(-3deg);
+	
+}
+#div-diagonal-2 h4{
+	transform: skewY(3deg);
+	background-color: rgba(255,255,255, 0.3);
+	padding:15px;
+	border-radius: 5px;
+	color:#f1f1f1;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+@media (max-width: 800px){
+.servicios-ofrecidos h4{
+	padding-top: 95px;
+}
+.servicios p{
+	margin-right: 25px;
+	text-align: center;
+}
+}
+
+@media (max-width: 600px){
+.servicios-ofrecidos{
+
+	margin-top: 15%;
+	width: 100%;
+	height: 400px;
+	background-color: #fdd835;
+}
+.servicios p{
+	margin-bottom: 25px;
+	text-align: center;
+}
+#div-diagonal-1{
+	margin-top: 30vh;
+	margin-bottom:50vh;
+}
+/*Media querie para letras de franjas diagonales*/
+@media (max-width: 382px){
+	#div-diagonal-1 h4{
+		font-size: 20px;
+	}
+	#div-diagonal-2 h4{
+		font-size: 19px;
+	}
+}
+
+@media (max-width: 369px){
+	.servicios-ofrecidos h4{
+		padding-top: 75px;
+	}
+}
+@media (max-width: 365px){
+	.servicios-ofrecidos h4{
+	font-size: 25px;
+	}
+}
+@media (max-width: 300px){
+	.servicios-ofrecidos h4{
+		padding-top: 55px;
+	}
+}
+

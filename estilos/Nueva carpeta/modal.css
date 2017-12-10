@@ -1,0 +1,72 @@
+.contenedor_modal{
+	/*Este div tiene el width de 100% 
+	y el height total del ancho de la ventana.
+	es el que actúa como capa de color oscuro que cubre el fondo de la página mientras se visualiza el modal*/
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: rgba(0,0,0,0.6);
+	/*transition:all 5s ease;*/
+	z-index:1000;/*Para asegurarme de que se sobre ponga ante el menú de escritorio y el menú móvil*/
+	width: 100%;
+	height:100%;
+}
+.contenedor_modal:hover{
+	background-color: rgba(0,0,0,0.9);	
+}
+
+.modal{
+	z-index: 100;
+	display: none;
+	position: relative;/*Le quité la posicion fixed a esta clase y le puse posicion relativa para así corregir el centrado en mozilla*/
+	color:rgba(0,0,0,0.8);
+	border-radius: 5px;
+	width: 400px;
+	height: 390px;
+	margin-top: 45px;
+	background:white;
+	box-shadow: 0px 0px 5px #ccc;
+	
+}
+#titular{
+	width: 400px;
+	text-align: center;
+}
+#imagen_modal{
+	display: flex;
+	margin:auto;
+	max-width: 150px;
+	margin-bottom: 10px;
+
+}
+.boton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.boton p{
+	text-align: center;
+	border-radius: 4px;
+	margin-top: 15px;
+	padding: 10px;
+	width: 110px;
+	background-color: #0896E0;
+	color:#f1f1f1;
+
+}
+.boton:hover{
+	cursor:pointer;
+}
+.boton p span{
+	margin-right: 10px;
+}
+
+/*Media queries para eliminar el modal en versiones móviles*/
+@media (max-width: 550px){
+.contenedor_modal{
+	display: none;
+}
+}

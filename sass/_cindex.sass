@@ -1,0 +1,189 @@
+.about-team
+	margin-top: 1.8em
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	p
+		font-weight: 700
+		line-height: 1.2
+		color: #555
+		text-align: center
+		font-size: 1.875rem
+
+#definicion-team
+	display: flex
+	justify-content: space-around
+	align-items: center
+	flex-direction: row
+	width: 100%
+	#ilustracion-team
+	    background-image: url(../imagenes/index/working_ky.png)
+	    background-size: cover
+	    width: 300px
+	    height: 300px
+	#texto-definicion
+	    font-size: 1.25rem
+	    text-align: justify
+	    width: 300px
+	    padding: 10px
+	#ilustracion-team2
+		@extend #ilustracion-team
+		background-image: url(../imagenes/index/flag.png)	 
+
+/*Sistema de trabajo en equipoky*/
+%algo
+	border-radius: 4px
+	width: 300px
+	height: 300px
+	margin: 10px
+	border: 1px solid #dfe0e0
+
+%algo2
+	width: 100%
+	height: 200px
+	background-size: cover
+	background-position: center
+	border-top-left-radius: 3px
+	border-top-right-radius: 3px
+
+%algo3
+	background: #DFE0E0
+	width: 100%
+	height: 70%
+	background-size: 150px 150px
+	background-position: center
+	background-repeat: no-repeat
+
+.texto-sistema
+	border-top: 1px solid #dfe0e0
+	width: 100%
+	height: 100px
+	display: flex
+	justify-content: center
+	align-items: center
+	border-bottom-left-radius: 3px
+	border-bottom-right-radius: 3px
+	p
+		text-align: center
+		font-weight: bold
+		padding: 5px
+
+#contenedor-sistema-trabajo
+	width: 100%
+	height: 400px
+	display: flex
+	justify-content: center
+	align-items: center
+	#sistema-trabajo
+		width: 74%
+		display: flex
+		justify-content: space-between
+		flex-wrap: nowrap
+		#get-idea
+			@extend %algo
+			#imagen-get
+				@extend %algo2
+				background-image: url(../imagenes/index/idea.png)
+			.texto-sistema
+				@extend .texto-sistema
+			#imagen-get2
+				@extend %algo3
+				background-image: url(../imagenes/index/ky1.png)
+		#analyze-idea
+			@extend %algo
+			#imagen-analyze
+				@extend %algo2
+				background-image: url(../imagenes/index/analyze.png)
+			.texto-sistema
+				@extend .texto-sistema
+			#imagen-analyze2
+				@extend %algo3
+				background-image: url(../imagenes/index/ky2.png)
+		#running-idea
+			@extend %algo
+			#imagen-working
+				@extend %algo2
+				background-image: url(../imagenes/index/working.png)
+			.texto-sistema
+				@extend .texto-sistema
+			#imagen-working2
+				@extend %algo3
+				background-image: url(../imagenes/index/ky3.png)
+		#running-ideaa
+			@extend %algo
+			#imagen-running
+				@extend %algo2
+				background-image: url(../imagenes/index/time.png)
+			.texto-sistema
+				@extend .texto-sistema
+			#imagen-running2
+				@extend %algo3
+				background-image: url(../imagenes/index/ky4.png)
+
+
+  #circle-1, #circle-2, #circle-3, #circle-4 
+    background: #DFE0E0
+    width: 100%
+    height: 100%
+  
+    background-size: 150px 150px
+    background-position: center
+    background-repeat: no-repeat
+
+  #circle-1
+    background-image: url(../../imagenes/index/ky_responsive.png)
+
+  #circle-2
+    background-image: url(../../imagenes/index/ky_design_apps.png)
+
+  #circle-3
+    background-image: url(../../imagenes/index/ky_developers.png)
+
+  #circle-4
+    background-image: url(../../imagenes/index/ky_marketing2.png)
+
+
+.dev 
+	width: 100%
+	height: 450px
+	background: rgba(187, 187, 187, 0.2)
+	clip-path: polygon(0% 18%, 100% 0%, 100% 75%, 0% 100%)
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	.dev__img-bg
+		width: 100%
+		height: 100%
+		object-fit: cover
+		opacity: 0.1
+		filter: blur(5px)
+		position: absolute
+	.dev__thumbnail 
+		width: 80px
+		height: 80px
+		background: transparent
+		position: relative
+		border-radius: 50%
+		overflow: hidden
+	.dev__thumbnail-img 
+		width: 100%
+		height: 100%
+		object-fit: cover
+	.dev__social 
+		width: auto
+		height: 50px
+		display: inline-flex
+		position: relative
+		align-items: center
+		margin-top: 1.2em
+		justify-content: center
+	.dev__social i 
+		font-size: 1.5em
+		padding: 1em
+		color: #777
+	.dev__description 
+		color: #444
+		padding: 1.5em
+		text-align: center

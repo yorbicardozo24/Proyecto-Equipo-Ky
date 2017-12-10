@@ -1,0 +1,186 @@
+/*Franja que dice "¿Listo para conocernos?"*/
+div#franja-quienes-somos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15%;
+}
+div#franja-quienes-somos{
+	background-color:#ee2b40;
+	height: 350px;
+}
+div#franja-quienes-somos h2{
+	color: white;
+	font-weight: normal;
+	font-size: 35px;
+}
+div#segunda-franja{
+	background-image: url(../imagenes/Equipo_ky_union.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+    filter:grayscale();
+	margin-top: 10%;
+	height: 350px;
+}
+div#segunda-franja h3{
+	padding-top: 100px;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 35px;
+}
+#segunda-franja p{
+	color: white;
+	text-align: center;
+}
+
+/*Contenido sobre nosotros*/
+
+.contenedor-flex{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+
+	width: 98%;
+	padding-top: 20%;
+	margin-bottom: 10%;
+}
+.contenedor-flex h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.contenedor-flex p{
+	font-size: 20px;
+}
+
+#kevin img{
+	width: 300px;
+	max-width: 250px;
+	-webkit-transition:all .9s ease; /* Safari y Chrome */
+	-moz-transition:all .9s ease; /* Firefox */
+	-o-transition:all .9s ease; /* IE 9 */
+	-ms-transition:all .9s ease; /* Opera */
+}
+#kevin img:hover{
+	-webkit-transform:scale(1.25);
+	-moz-transform:scale(1.25);
+	-ms-transform:scale(1.25);
+	-o-transform:scale(1.25);
+	transform:scale(1.25);
+}
+
+#kevin-info p,#yorbi-info p{
+	width: 300px;
+    font-size: 18px;
+}
+#yorbi img{
+	width: 300px;
+	max-width: 250px;
+	-webkit-transition:all .9s ease; /* Safari y Chrome */
+	-moz-transition:all .9s ease; /* Firefox */
+	-o-transition:all .9s ease; /* IE 9 */
+	-ms-transition:all .9s ease; /* Opera */
+}
+#yorbi img:hover{
+	-webkit-transform:scale(1.25);
+	-moz-transform:scale(1.25);
+	-ms-transform:scale(1.25);
+	-o-transform:scale(1.25);
+	transform:scale(1.25);
+}
+
+/*Contenedor con background en diagonal*/
+#contenedor-diagonal{
+	margin-top: 10%;
+}
+#background-diagonal{
+	width: 100%;
+	height: 350px;
+	background:repeating-linear-gradient(-45deg, #009688 0%, #009688 30%, #54b2a9 0%, #54b2a9 100%);
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	
+}
+#background-diagonal p{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	width: 100%;
+	font-size: 55px;
+	padding: 1px;
+	border-radius: 5px;
+	color:#f1f1f1;
+}
+
+
+/*Para responsive*/
+@media (max-width: 800px){
+	div#franja-quienes-somos{
+	margin-top: 0%;
+	}
+	div#segunda-franja{
+		margin-top: 20%;
+	}
+}
+@media (max-width: 629px){
+	#kevin img{
+	margin-top: 10%;
+	width: 300px;
+	max-width: 250px;
+	}
+	div#franja-quienes-somos h2{
+		text-align: center;
+	}
+	#background-diagonal p{
+		font-size: 50px;
+	}
+}
+@media (max-width: 560px){
+ #kevin-info h2, #yorbi-info h2{
+ 	text-align: center;
+ }
+ div#segunda-franja h3{
+ 	padding-top: 75px;
+ 	font-size: 25px;
+ }
+ #background-diagonal p{
+	font-size: 40px;
+ }
+}
+@media (max-width: 400px){
+	.contenedor-flex{
+		padding-top: 40%;
+	}
+	.contenedor-flex #kevin-info h2{
+		text-align: center;
+	}
+	#kevin-info p{
+		max-width: 210px;
+		margin-left:20px;
+		margin-right:20px;
+	}
+	#yorbi-info p{
+		max-width: 210px;
+		margin-left:20px;
+		margin-right:20px;
+	}
+	#background-diagonal p{
+		font-size: 35px;
+    }
+}
+@media (max-width: 316px){
+	#kevin img{
+	width: 150px;
+	}
+	#yorbi img{
+	margin-top: 20%;
+	width: 150px;
+	}
+}
+/*morado claro #a83fcf*/

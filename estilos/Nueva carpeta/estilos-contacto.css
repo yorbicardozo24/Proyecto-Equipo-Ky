@@ -1,0 +1,231 @@
+#imagen-contacto{
+	padding-top: 10%;
+	width: 100%;
+	height: 300px;
+	background-image: url(../imagenes/Equipo_ky_union.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+#imagen-contacto h2, p{
+	display: flex;
+	justify-content: center;
+	font-weight: normal;
+	color:rgba(255,255,255,0.7);
+}
+#imagen-contacto h2{
+	font-size: 55px;
+}
+#imagen-mensaje {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+#imagen-mensaje img{
+	margin-top: 15px;
+	width:250px;
+	height: 200px;
+}
+#contenedor-contacto{
+	display: flex;
+	justify-content: center;
+	
+	width: 100%;
+	margin:45px auto;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	border-radius: 5px;
+
+}
+#break-oculto{
+	display: none;
+}
+label#nombre:before{
+	font-family: 'icomoon';
+	font-size: 20px;
+	background-color: #8a959e;
+	color:white;
+	content: "\e971";
+	padding:9px;
+	border-radius: 3px;
+	margin:0;
+	
+	position: relative;
+	top:4px;
+	left:-49px;
+}
+label#email:before{
+	font-family: 'icomoon';
+	content: "\e96b";
+	font-size: 20px;
+	background-color: #8a959e;
+	color:white;
+	padding:9px;
+	border-radius: 3px;
+	margin:0;
+	
+	position: relative;
+	top:4px;
+	left:-49px;
+}
+input{
+	border:1px solid #bac1c5;
+	border-radius: 5px;
+}
+
+#nombre{
+	margin-bottom:15px;
+	padding: 8px;
+	width: 480px;
+	
+}
+#email{
+	padding: 8px;
+	width: 480px;
+	margin-bottom: 25px;
+	
+}
+textarea{
+	background-color: white;
+	border-radius: 3px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#txt-coment{
+	font-size:14px;
+	color:rgba(0,0,0,0.6);
+}
+#comentarios {
+    border: 1px solid #bac1c5;
+    width: 500px;
+    height: 300px;
+}
+#enviar{
+	padding: 12px;
+	width: 120px;
+	border:none;
+	background-color: #2196F3;
+	color:#f1f1f1;
+	font-size: 18px;
+}
+#enviar:hover{
+	cursor:pointer;
+}
+
+/*Media queries para ajustar el formulario a versiones móviles*/
+@media (max-width: 900px){
+	#imagen-contacto{
+	padding-top: 30%;
+}
+}
+@media (max-width: 700px){
+	#break-oculto{
+		display: inline;
+	}
+label#nombre:before{
+	font-family: 'icomoon';
+	font-size: 20px;
+	background-color: #8a959e;
+	color:white;
+	content: "\e971";
+	padding:9px;
+	border-radius: 3px;
+	margin:0;
+	
+	position: relative;
+	top:4px;
+	left:-0px;
+}
+label#email:before{
+	font-family: 'icomoon';
+	content: "\e96b";
+	font-size: 20px;
+	background-color: #8a959e;
+	color:white;
+	padding:9px;
+	border-radius: 3px;
+	margin:0;
+	
+	position: relative;
+	top:4px;
+	left:-0px;
+}
+
+#nombre{
+	margin-bottom:15px;
+	padding: 8px;
+	width: 90%;
+	
+}
+#email{
+	padding: 8px;
+	width: 90%;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	
+}
+
+textarea{
+	background-color: white;
+	border-radius: 3px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 98%;	
+}
+#comentarios {
+    border: 1px solid #bac1c5;
+    width: 400px;
+    height: 400px;
+}
+}
+@media (max-width: 500px){
+#imagen-contacto h2{
+	font-size: 35px;
+}
+#imagen-mensaje img{
+	margin-top: 15px;
+	width:240px;
+	height: 200px;
+}
+input{
+	margin-left: 5px;
+}
+textarea{
+	margin-left: 5px;
+	width: 95%;
+}
+#txt-coment{
+	margin-left: 5px;
+}
+#comentarios {
+    border: 1px solid #bac1c5;
+    width: 300px;
+    height: 300px;
+}
+label#nombre:before{
+	position:static;
+	top:4px;
+	left:-49px;
+}
+label#email:before{
+	position: static;
+	top:4px;
+}
+#enviar{
+	padding: 10px;
+	width: 110px;
+	font-size: 17px;
+
+	display: flex;
+	justify-content: center;
+	margin:auto;
+}
+}
+@media (max-width: 350px){
+#comentarios {
+    border: 1px solid #bac1c5;
+    width: 230px;
+    height: 200px;
+}
+}

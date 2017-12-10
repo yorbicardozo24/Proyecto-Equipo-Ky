@@ -1,0 +1,143 @@
+.header {
+  width: 100%;
+  height: 450px;
+  background: #402471;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); }
+  .header .header__title {
+    color: white; }
+  .header p {
+    color: white; }
+  .header .header__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.1; }
+
+.mainbefore, .mainafter {
+  content: "";
+  width: 20px;
+  height: 60%;
+  position: absolute;
+  top: -30px;
+  background: rgba(59, 33, 106, 0.7);
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+  z-index: -1; }
+
+.main .main__container .features .features__grid .features__grid-one, .main .main__container .features .features__grid .features__grid-two {
+  height: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.main {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  position: relative;
+  border-radius: 5px;
+  max-width: 900px;
+  background: #fff; }
+  .mainbefore {
+    left: 0;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  .mainafter {
+    right: 0;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  .main .main__container {
+    width: 100%;
+    height: auto;
+    margin: -110px 0;
+    max-width: 900px;
+    position: relative;
+    background: inherit;
+    border-radius: 3px; }
+    .main .main__container .features {
+      display: block;
+      width: 100%;
+      height: auto; }
+      .main .main__container .features p {
+        text-align: center;
+        margin-top: 50px; }
+      .main .main__container .features .pkevin {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        width: 98%;
+        padding-top: 20%;
+        margin-bottom: 10%; }
+        .main .main__container .features .pkevin .pkevini #img-yorbi {
+          border-radius: 50%; }
+        .main .main__container .features .pkevin .pf p {
+          width: 300px;
+          font-size: 18px;
+          text-align: left;
+          margin-top: 20px; }
+      .main .main__container .features .va {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 200px;
+        font-size: 50px;
+        background: #fafafa;
+        text-align: center; }
+      .main .main__container .features .features__title {
+        margin: auto;
+        color: #402471;
+        text-align: center;
+        padding: 1em; }
+      .main .main__container .features .features__grid {
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
